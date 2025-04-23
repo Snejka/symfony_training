@@ -6,22 +6,6 @@
 
 {# Define the body section and load it as body in base.html.twig #}
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<div class="example-wrapper">
-{# controller_name and param are set in HomeControler File #}
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from :
-    <p>{{ param }}</p>
-    <ul>
-        <li>Your controller at <code>C:/Users/Snejka/Desktop/symfony_training/src/Controller/HomeController.php</code></li>
-        <li>Your template at <code>C:/Users/Snejka/Desktop/symfony_training/templates/home/index.html.twig</code></li>
-    </ul>
-</div>
 
 <div id="carouselExampleCaptions" class="carousel slide">
   <div class="carousel-indicators">
@@ -31,12 +15,18 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="https://media.istockphoto.com/id/2155769551/fr/photo/tunnel-de-donn%C3%A9es-num%C3%A9riques-flux-dinformations.jpg?s=1024x1024&w=is&k=20&c=cg_KmOe71bM51VvUe3tcpZyFpo3XTWTGR3ELL6K_mpo=" class="d-block w-100" alt="...">
+      <img src="https://img.freepik.com/free-vector/minimalist-white-abstract-background_23-2148816315.jpg?t=st=1745420481~exp=1745424081~hmac=7b4fb5acf5cf06a20bcfb978c288d540274bec63462eca63bc0ef6bb8bd7ad52&w=2000" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+        <h1>Hello {{ controller_name }}! ✅</h1>
+        <p>This friendly message is coming from :</p>
+        <p>{{ param }}</p>
+        <ul>
+            <li>Your controller at <code>C:/Users/Snejka/Desktop/symfony_training/src/Controller/HomeController.php</code></li>
+            <li>Your template at <code>C:/Users/Snejka/Desktop/symfony_training/templates/home/index.html.twig</code></li>
+        </ul>
       </div>
     </div>
+
     <div class="carousel-item">
       <img src="https://media.istockphoto.com/id/2155769551/fr/photo/tunnel-de-donn%C3%A9es-num%C3%A9riques-flux-dinformations.jpg?s=1024x1024&w=is&k=20&c=cg_KmOe71bM51VvUe3tcpZyFpo3XTWTGR3ELL6K_mpo=" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
@@ -44,6 +34,7 @@
         <p>Some representative placeholder content for the second slide.</p>
       </div>
     </div>
+
     <div class="carousel-item">
       <img src="https://media.istockphoto.com/id/2155769551/fr/photo/tunnel-de-donn%C3%A9es-num%C3%A9riques-flux-dinformations.jpg?s=1024x1024&w=is&k=20&c=cg_KmOe71bM51VvUe3tcpZyFpo3XTWTGR3ELL6K_mpo=" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
@@ -61,4 +52,21 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+
+<div class="container-fluid">
+  About Section
+</div>
+
+<div class="container-fluid">
+  Resume Section
+</div>
+
+<div class="container-fluid">
+  Portfolio Section
+</div>
+
+<div class="container-fluid">
+  Contacs Section
+</div>
+
 {% endblock %}

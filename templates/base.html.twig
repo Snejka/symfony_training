@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html data-bs-theme="dark">
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
@@ -21,5 +21,9 @@
             {% endblock %}
         </header>
         {% block body %}{% endblock %}
+
+        {% block footer %}
+            {% include ("footer.html.twig") %}
+        {% endblock %}
     </body>
 </html>

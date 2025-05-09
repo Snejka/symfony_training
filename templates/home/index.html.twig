@@ -21,6 +21,10 @@
     <turbo-frame id="turbo_frame_1">
         <a href="{{ path('app_firstturbo') }}">This block is scoped, the rest of the page will not change if you click here!</a>
     </turbo-frame>
+
+     <turbo-frame id="turbo_frame_2" src="{{ path('app_firstturbo') }}">
+       A placeholder for lazy loaded content.
+    </turbo-frame>
        
 </div>
 {% endblock %}

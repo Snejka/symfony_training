@@ -30,6 +30,9 @@ class Projects
     #[ORM\Column(length: 255)]
     private ?string $tech = null;
 
+    #[ORM\Column(length: 255)]
+    private ?string $client = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -91,6 +94,18 @@ class Projects
     public function setTech(string $tech): static
     {
         $this->tech = $tech;
+
+        return $this;
+    }
+
+    public function getClient(): ?string
+    {
+        return $this->client;
+    }
+
+    public function setClient(string $client): static
+    {
+        $this->client = $client;
 
         return $this;
     }
